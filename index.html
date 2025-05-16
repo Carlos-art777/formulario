@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <H1>Registro para maratón</H1>
+    <form action="">
+     <fieldset><br>
+      <legend>Datos personales</legend>
+         <div>
+         <label for="nombre">Ingresar su nombre</label>
+         <input type="text" name="nombre"></div>
+         <br>
+         <div>
+         <label for="apellido">Ingresar su apellido</label>
+         <input type="text" name="apellido"></div>
+         <br>
+         <div>
+         <label for="email">Ingrese su email</label>
+         <input type="email" name="email"></div>
+         <br>
+         <div>
+         <label for="nacimiento">Ingrese fecha nacimiento</label>
+         <input type="date" name="nacimiento" id="fecha"></div>
+         <br>
+         <div>
+         <label for="ingresar">Ficha médica (PDF)</label>
+         <input type="file" name="ingresar" id="archivo"></div>
+    </fieldset><br>
+    
+    <fieldset>
+      <legend>Carrera</legend> 
+        <p>Seleccionar maratón:</p>
+        <ul>
+         <li><input type="radio" name="distancia" id="2km" value="2km"> 2 km</li>
+         <li><input type="radio" name="distancia" id="5km" value="5km"> 5 km</li>
+         <li><input type="radio" name="distancia" id="10km" value="10km"> 10 km</li>
+        </ul>
+
+        <label for="marca">Seleccionar marca remera:</label>
+        <select name="marca" id="marca">
+            <option value="Nike">Nike</option>
+            <option value="Adidas">Adidas</option>
+            <option value="Puma">Puma</option>
+        </select>
+        <p>Seleccionar dias disponibles:</p>
+        <ul>
+          <li>
+            <label for="lunes">Lunes</label>
+            <input type="checkbox" name="lunes" id="lunes"></li>
+          <li>
+            <label for="miercoles">miercoles</label>
+            <input type="checkbox" name="miercoles" id="miercoles"></li>
+          <li>
+            <label for="viernes">viernes</label>
+            <input type="checkbox" name="viernes" id="viernes"></li>
+        </ul>
+    </fieldset><br>
+        
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
